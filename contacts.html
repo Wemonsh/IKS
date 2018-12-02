@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/services.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <title>Team</title>
+  </head>
+  <body>
+    
+    <header>
+        <div class="alternative-header">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 banner">
+                        <img src="img/alternative-banner4.png" alt="">
+                        <h1>Контакты</h1>
+                    </div>
+                    <div class="col-12 menu wow fadeIn">
+                            <nav>
+                                <ul>
+                                    <li><a class="link" href="#">О компании</a></li>
+                                    <li><a class="link" href="#">Команда</a></li>
+                                    <li><a class="link" href="#">Вакансии</a></li>
+                                    <li><a class="link activ" href="#">Контакты</a></li>
+                                    <li><a class="link" href="#">Пресс-центр</a></li>
+                                </ul>
+                            </nav>
+                        </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="feedback">
+        <div class="container">
+            <div class="row">
+                <div class="col-6">
+                    <h2><span class="line">Как с нами</span>
+                        <span class="line">связаться</span></h2>
+
+                    <p class="phone"><strong>Звоните по будням, с 9 до 18:00</strong></br>
+                    <a href="#">7 (495) 782-82-46</a> (Москва)</p>
+
+                    <ul class="social-icons">
+                        <li class="icon"><a href="#"><img src="/img/icons/whatsapp.svg" alt=""></a></li>
+                        <li class="icon"><a href="#"><img src="/img/icons/instagram.svg" alt=""></a></li>
+                        <li class="icon"><a href="#"><img src="/img/icons/skype.svg" alt=""></a></li>
+                    </ul>
+
+                    <p class="address"><strong>Пишите на почту или имейл:</strong></br>
+                    119331, Москва, пр. Вернадского, 29</br>
+                    <a href="#">info@consult-systems.ru</a></p>
+
+                    <p><strong>Наши реквизиты:</strong></p>
+                    <ul class="requisites">
+                        <li>Лицензия: 123456</li>
+                        <li>ИНН: 7702070139</li>
+                        <li>КПП: 770943002</li>
+                        <li>БИК: 044525411</li>
+                    </ul>
+                </div>
+                <div class="col-6">
+                    <img src="/img/building.png" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="passage">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h2><span class="line">Как доехать</span></h2>
+                    <a class="download" href="#"><img src="/img/icons/download2.png" alt="">Скачать схему проезда</a>
+                </div>
+                <div class="col-12">
+                    <div class="map">
+                        
+                            <div id="map"></div>
+                            <script>
+                              var map;
+                              function initMap() {
+                                map = new google.maps.Map(document.getElementById('map'), {
+                                  center: {lat: -34.397, lng: 150.644},
+                                  zoom: 8
+                                });
+                              }
+                            </script>
+                            <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAs5z41WZsUlY-XzER6aR4WLbqXO1R1C6M&callback=initMap"
+                            async defer></script>
+
+                    </div>
+                    <h3>Как дойти от станции метро:</h3>
+                    <h4><img src="/img/metro.png" alt="">Вернадского</h4>
+                    <div class="row path">
+                        <div class="col-6">
+                            <img src="/img/1.png" alt="">
+                            <p>Последний вагон из центра. Выходите из метро, поворачиваете направо и переходите дорогу, далее проехать одну остановку на автобусе №224 до остановки Проспект Вернадского, 33. Прямо напротив остановки находится вход в ТОЦ “Лето” (большие стеклянные двери).</p>
+                        </div>
+                        <div class="col-6">
+                            <img src="/img/2.png" alt="">
+                            <p>Последний вагон из центра. Выходите из метро, поворачиваете направо и переходите дорогу, далее проехать одну остановку на автобусе №224 до остановки Проспект Вернадского, 33. Прямо напротив остановки находится вход в ТОЦ “Лето” (большие стеклянные двери).</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="js/wow.min.js"></script>
+    <script src="js/headhesive.min.js"></script>
+    <script>
+    new WOW().init();
+
+    </script>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+  </body>
+</html>
