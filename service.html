@@ -29,7 +29,7 @@
                             <p class="description">Специалист перезвонит в 11:25 и ответит на все вопросы</p>
                             <form action="#">
                                 <div class="form-group">
-                                    <input type="text" placeholder="Ваш телефон">
+                                    <input id="number" type="tel" placeholder="Ваш телефон">
                                     <button>Перезвоните мне</button>
                                 </div>
                                 <div class="custom-control custom-checkbox">
@@ -150,7 +150,55 @@
                                 </div>
                             </div>
                             <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
-                                123
+                                <div class="row step">
+                                    <div class="col-sm-2">
+                                        <img class="number" src="/img/1.png" alt="">
+                                    </div>
+                                    <div class="col-sm-10">
+                                        <h3 class="title">Знакомство</h3>
+                                        <p class="text">Вы оставляете заявку на сайте, либо связываетесь с нами по телефону.</p>
+                                        <p class="text">Чтобы начать работу, вам нужно будет описать ситуацию и предоставить извещение о проведении торгов</p>
+                                        <div class="buttons-group">
+                                            <a class="button" href="#">оставить заявку</a>
+                                            <a class="download" href="#"><img src="/img/doc.png" alt=""> <p>Скачать</br>фрагмент</br>договора</p></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row step">
+                                    <div class="col-sm-2">
+                                        <img class="number" src="/img/2.png" alt="">
+                                    </div>
+                                    <div class="col-sm-10">
+                                        <h3 class="title">Знакомство</h3>
+                                        <p class="text">Проанализируем ваши материалы, оценим перспективы обращения в ФАС и предложим правовые стратегии для разрешения спора. Если у нас есть перспективы успешного разрешения спора, заключаем с вами договор.</p>
+                                        <p class="cost"><span class="cost">40 000 ₽</span> — стоимость составления жалобы/возражения на жалобу и иных процессуальных документов</p>
+                                        <div class="info-block">
+                                            <img src="/img/lock.png" alt="">
+                                            <p>Прописываем условия конфиденциальности в каждом договоре </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row step">
+                                    <div class="col-sm-2">
+                                        <img class="number" src="/img/3.png" alt="">
+                                    </div>
+                                    <div class="col-sm-10">
+                                        <h3 class="title">Знакомство</h3>
+                                        <p class="text">Вы оставляете заявку на сайте, либо связываетесь с нами по телефону.</p>
+                                        <p class="text-price"><span class="cost">8 400 ₽</span> — стоимость составления жалобы/возражения на жалобу и иных процессуальных документов</p>
+                                    </div>
+                                </div>
+                                <div class="row step">
+                                    <div class="col-sm-2">
+                                        <img class="number" src="/img/4.png" alt="">
+                                    </div>
+                                    <div class="col-sm-10">
+                                        <h3 class="title">Знакомство</h3>
+                                        <p class="text-price"><span class="cost">40 000 ₽</span> — стоимость составления жалобы/возражения на жалобу и иных процессуальных документов</p>
+                                        <p class="text-price"><span class="cost">40 000 ₽</span> — стоимость составления жалобы/возражения на жалобу и иных процессуальных документов</p>
+                                        <p class="text-price"><span class="cost">40 000 ₽</span> — стоимость составления жалобы/возражения на жалобу и иных процессуальных документов</p>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -485,6 +533,13 @@
     new WOW().init();
 
     </script>
+
+<script src="js/jquery.maskedinput.min.js"></script>
+<script>
+    $(function(){
+        $("#number").mask("8(999) 999-9999");
+    });
+  </script>
 
 </body>
 </html>

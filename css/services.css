@@ -170,7 +170,7 @@ h2 {
         padding-left: 40px;
         font-size: 2.250em;
         min-width: 100%;
-        border: none;
+        border: none !important;
         color: #cccccc; }
         .compact-header .container .search input:focus {
           outline: none; }
@@ -298,8 +298,15 @@ h2 {
         display: inline;
         margin-right: 20px; }
         .feedback .container .social-icons .icon a img {
+          -webkit-transition: 0.3s;
+          -o-transition: 0.3s;
+          transition: 0.3s;
           max-height: 32px;
           max-width: 32px; }
+          .feedback .container .social-icons .icon a img:hover {
+            -webkit-transform: scale(1.2);
+            -ms-transform: scale(1.2);
+            transform: scale(1.2); }
     .feedback .container .address {
       margin-top: 100px;
       margin-bottom: 50px;
@@ -376,6 +383,8 @@ h2 {
     width: 100%;
     height: 100%; }
     .vacancy .vacantion-info-wrapper .vacancy-info {
+      -webkit-box-shadow: 0px 1px 72px -20px #000000;
+      box-shadow: 0px 1px 72px -20px #000000;
       margin-top: 130px;
       top: 10px;
       bottom: 10px;
@@ -700,7 +709,9 @@ h2 {
     font-weight: 700;
     font-size: 2.250em; }
   .table-price .table-responsive {
-    margin-bottom: 30px; }
+    margin-bottom: 30px;
+    -webkit-mask-image: -webkit-linear-gradient(left, transparent 0, rgba(0, 0, 0, 0.25) 9px, #000 18px, #000 calc(100% - 18px), rgba(0, 0, 0, 0.25) calc(100% - 9px), transparent);
+    mask-image: linear-gradient(90deg, transparent 0, rgba(0, 0, 0, 0.25) 9px, #000 18px, #000 calc(100% - 18px), rgba(0, 0, 0, 0.25) calc(100% - 9px), transparent); }
   .table-price table {
     font-size: 1.125em; }
     .table-price table thead tr th {
@@ -855,6 +866,10 @@ h2 {
       .get-price form button {
         max-width: 300px !important;
         border-radius: 25px; } }
+
+@media (max-width: 960px) {
+  .get-price {
+    font-size: 0.8em !important; } }
 
 .media:nth-child(2) {
   padding: 100px 0px; }
@@ -1221,6 +1236,26 @@ h2 {
     margin-left: 50%; }
     .error .headline h2 {
       margin-top: 70px; }
+
+@media (max-width: 1200px) {
+  .error {
+    background-position-x: -635px; }
+    .error img {
+      width: 100%; }
+    .error .headline {
+      margin-left: 20%; } }
+
+@media (max-width: 600px) {
+  .error {
+    background-color: #f8f3f5;
+    padding-top: 60px !important;
+    margin-bottom: 20px !important;
+    height: 500px !important; }
+    .error .headline {
+      margin-left: 0 !important;
+      text-align: center; }
+      .error .headline h2 {
+        text-align: center; } }
 
 .article-header {
   position: relative;
