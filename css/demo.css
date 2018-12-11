@@ -36,13 +36,6 @@
 	opacity: 1;
 }
 
-a {
-	text-decoration: none;
-	color: #5d93d8;
-	color: var(--color-link);
-	outline: none;
-}
-
 a:hover,
 a:focus {
 	color: #423c2b;
@@ -80,8 +73,17 @@ main {
 
 .content-row {
 	position: absolute;
-	width: 99vw;
+	width: 100%;
+
 }
+
+
+.is-opened-container {
+	position: fixed;
+	width: 100vw;
+	z-index: 100;
+}
+
 
 .content {
 	max-width: 1440px;
@@ -260,7 +262,6 @@ a.demo--current {
 }
 
 ul {
-	margin: 0;
 	padding: 0;
 	list-style: none;
 }
@@ -690,19 +691,23 @@ a.global-menu__item:hover {
 }
 
 .hamburger {
+	transition: 0.3s;
 	width: 64px;
 	height: 64px;
 	display: block;
-	position: relative;
+	position: fixed !important;
 	cursor: pointer;
 	position: absolute;
 	left: 35px;
-	top: 35px;
+	top: 20px;
 	right: 2.25em;
-	z-index: 110;
+	z-index: 310;
+	background-color: #fff;
 	background-image: url("/img/icons/burger.png");
+	background-position: center;
 	background-repeat: no-repeat;
 	border: none;
+	border-radius: 50%;
 
 }
 

@@ -78,6 +78,7 @@ class ShapeOverlays {
   const elmHamburger = document.querySelector('.hamburger');
   const gNavItems = document.querySelectorAll('.global-menu__item');
   const elmOverlay = document.querySelector('.shape-overlays');
+  const demo5 = document.querySelector('.demo-5');
   const overlay = new ShapeOverlays(elmOverlay);
 
   elmHamburger.addEventListener('click', () => {
@@ -87,11 +88,13 @@ class ShapeOverlays {
     overlay.toggle();
     if (overlay.isOpened === true) {
       elmHamburger.classList.add('is-opened-navi');
+      demo5.classList.add('is-opened-container');
       for (var i = 0; i < gNavItems.length; i++) {
         gNavItems[i].classList.add('is-opened');
       }
     } else {
       elmHamburger.classList.remove('is-opened-navi');
+      demo5.classList.remove('is-opened-container');
       for (var i = 0; i < gNavItems.length; i++) {
         gNavItems[i].classList.remove('is-opened');
       }
